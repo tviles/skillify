@@ -45,10 +45,10 @@ def find_skillify_skills(directories: list[str]) -> list[dict]:
                 continue
             try:
                 parsed = parse_frontmatter(str(md_file))
-            except Exception:
+            except (OSError, UnicodeDecodeError, yaml.YAMLError):
                 continue
             if parsed["metadata"].get("generated_by") == "skillify":
-                skill_type = "skill" if "/skills/" in str(md_file) else "command"
+                skill_type = "skill" if "skills" in md_file.parts else "command"
                 results.append({
                     "path": str(md_file),
                     "type": skill_type,
