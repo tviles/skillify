@@ -1,6 +1,6 @@
 {
   "name": "skillify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Capture successful conversation patterns as reusable skills and commands. The generative counterpart to hookify.",
   "author": {
     "name": "Tyler Viles",
