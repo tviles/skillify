@@ -9,8 +9,7 @@ Analyze this conversation for patterns worth capturing as reusable skills or com
 
 ## Instructions
 
-1. **Spawn the conversation-analyzer agent** using the Agent tool:
-   - Agent definition: `${CLAUDE_PLUGIN_ROOT}/agents/conversation-analyzer.md`
+1. **Spawn the `skillify:conversation-analyzer` agent** using the Agent tool with `subagent_type: "skillify:conversation-analyzer"`:
    - Mode: **manual mode** — return a ranked menu of suggestions
    - Pass the current conversation context
 
