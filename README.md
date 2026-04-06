@@ -51,23 +51,10 @@ Settings live at `~/.claude/skillify.config.json`. Use `/skillify:configure` to 
 - Minimum tool-call threshold before auto mode triggers
 - Default save location (project `.claude/` or global `~/.claude/`)
 
-## Project structure
-
-```
-.claude-plugin/plugin.json    Plugin manifest
-commands/                     Slash command definitions
-agents/conversation-analyzer  The analysis brain
-skills/skillify/              Auto-trigger detection skill
-hooks/stop.py                 Stop hook entry point
-core/                         Python modules (analysis, config, eval generation)
-templates/                    Skill and command generation templates
-tests/                        Test suite
-```
-
 ## Status
 
 Early release (v0.1.0). Core flow is working; expect rough edges in auto-mode heuristics and template coverage. Feedback welcome via GitHub issues.
 
 ## License
 
-TBD
+MIT
